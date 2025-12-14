@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-lite-surface pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-lite-metal/50 gap-4">
-          <p className="font-sans">&copy; {new Date().getFullYear()} LITECODE. Todos os direitos reservados.</p>
+          <p className="font-sans">&copy; {new Date().getFullYear()} LITECODEX. Todos os direitos reservados.</p>
           <div className="flex gap-4 font-sans">
             <span>Privacidade</span>
             <span>Termos</span>
