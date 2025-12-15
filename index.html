@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0e17" />
     <title>SITECODEX™ | Criação de Sites e Catálogos para MEI e Autônomos</title>
     <meta name="description" content="Tenha um site profissional ou cardápio digital de alta conversão. Soluções rápidas para MEIs, restaurantes e prestadores de serviço em Goiânia." />
     
@@ -10,15 +11,13 @@
     <link rel="canonical" href="https://sitecodex.sitecodex.workers.dev" />
     <meta name="robots" content="index, follow" />
 
-    <!-- Favicon & Logo -->
-   <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <!-- Favicon & Logo -->     
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
 
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-
-<link rel="manifest" href="/site.webmanifest">
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="SITECODEX™ - Sites que Vendem" />
@@ -118,6 +117,21 @@
       },
       "description": "Criação de sites de alta performance e catálogos digitais para MEIs e autônomos em Goiânia."
     }
+    </script>
+    
+    <!-- PWA Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+              console.log('SW registered: ', registration);
+            })
+            .catch(registrationError => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
     </script>
 <script type="importmap">
 {
