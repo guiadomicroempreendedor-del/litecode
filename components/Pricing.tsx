@@ -18,12 +18,12 @@ const Pricing: React.FC = () => {
         
         <div className="text-center mb-16">
             <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-6 uppercase">Investimento</h2>
-            <p className="font-sans text-lite-metal max-w-2xl mx-auto leading-relaxed mb-4">
+            <h6 className="font-sans text-lite-metal max-w-2xl mx-auto leading-relaxed mb-4">
                 Agências e freelancers costumam cobrar entre <strong>R$500 e R$700</strong> por um site como este.
-            </p>
-            <p className="font-sans text-white max-w-2xl mx-auto leading-relaxed">
+            </h6>
+            <h4 className="font-sans text-white max-w-2xl mx-auto leading-relaxed">
                 Nosso valor está reduzido por tempo limitado porque conhecemos, na prática, o desafio de empreender no Brasil.
-            </p>
+            </h4>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
