@@ -3,7 +3,7 @@ const urlsToCache = [
   '/',
   '/index.html',
   '/site.webmanifest',
-  '/favicon.ico'
+  '/favicon.svg'
 ];
 
 // Install SW
